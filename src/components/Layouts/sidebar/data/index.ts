@@ -21,6 +21,12 @@ export const NAV_DATA = [
         items: [],
       },
       {
+        title: "Invoice",
+        url: "/invoice",
+        icon: Icons.Invoice,
+        items: [],
+      },
+      {
         title: "Profile",
         url: "/profile",
         icon: Icons.User,

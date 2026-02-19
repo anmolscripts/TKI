@@ -53,6 +53,7 @@ export async function POST(request: Request) {
 
   const maxAgeSeconds = remember ? 60 * 60 * 24 * 30 : 60 * 60 * 8;
   const token = await createSessionToken({
+    name: user?.user || user?.email || identifierRaw,
     email: user?.email || user?.user || identifierRaw,
     exp: Math.floor(Date.now() / 1000) + maxAgeSeconds,
   });

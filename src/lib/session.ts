@@ -1,6 +1,7 @@
 export const SESSION_COOKIE_NAME = "tki_session";
 
 type SessionPayload = {
+  name?: string;
   email: string;
   exp: number;
 };
@@ -86,4 +87,3 @@ export async function verifySessionToken(token: string | undefined | null) {
 
   return payload;
 }
-
