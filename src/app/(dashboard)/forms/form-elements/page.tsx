@@ -57,7 +57,7 @@ export default function FormElementsPage() {
           </ShowcaseSection>
 
           <ShowcaseSection title="Time and date" className="space-y-5.5 !p-6.5">
-            <DatePickerOne />
+            <DatePickerOne label={""} placeholder={""} type={"number"} />
             <DatePickerTwo />
           </ShowcaseSection>
 
